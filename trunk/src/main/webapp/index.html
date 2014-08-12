@@ -4,15 +4,33 @@
 		<meta name="keywords" content="date night with brian">
 		<title>nw12 style!</title>
 		<link rel="stylesheet" type="text/css" href="css.htm">
+
+		<script language="javascript">
+			x = 1;
+
+			function changeImage() {
+
+			if (x==1)
+				{
+					x=2;
+					document.getElementById("img1").src = "dm3loaded.jpg";
+				}
+				else
+				{
+					x=1;
+					document.getElementById("img1").src = "dm3nice.jpg";
+				}
+			}
+		</script>
+
+
 	</head>
+
+
+
 	<body>
-
-	<div id="floater"></div>
-		<div id="content">
-			<p>drankmoms</p>
-
-
-	</div>
-
+	<p>
+			<img id="img1" src="dm3nice.jpg" alt="these moms is drank" title="these moms is drank" align="middle" onclick="changeImage()">
+	</p>
 	</body>
 </html>
